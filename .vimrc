@@ -6,8 +6,9 @@ endif
 "Искать плагины в этой директории
 call plug#begin('~/.vim/bundle')
     Plug 'ErichDonGubler/vim-sublime-monokai'
-    Plug 'Valloric/YouCompleteMe'
+"    Plug 'Valloric/YouCompleteMe'
     Plug 'neomake/neomake'
+    Plug 'davidhalter/jedi-vim', {'for': 'python'}
 call plug#end()
 
 "Настроить плагины
