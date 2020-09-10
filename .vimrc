@@ -9,6 +9,7 @@ call plug#begin('~/.vim/bundle')
 "    Plug 'Valloric/YouCompleteMe'
     Plug 'neomake/neomake'
     Plug 'davidhalter/jedi-vim', {'for': 'python'}
+    Plug 'scrooloose/nerdtree'
 call plug#end()
 
 "Настроить плагины
@@ -23,3 +24,7 @@ set imsearch=0			"Аналогично настраивается режим п�
 set number			"Включить абсолютные номера строк
 set foldmethod=indent		"Установить метод сворачивания - по отступам
 set foldnestmax=2		"Установить глубину сворачивания - 2 уровня
+
+"Настройки отображения дерева каталогов
+map <F3> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$', '\.o$']
