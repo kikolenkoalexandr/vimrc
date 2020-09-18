@@ -1,4 +1,5 @@
 "Установить VIM-PLUG если он еще не установлен
+"Чтобы установить VIM-PLUG необходимо просто запустить vim от имени пользователя в чьей домашней дирректории находится файл .vimrc
 if empty(glob("~/.vim/autoload/plug.vim"))
     execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.github.com/junegunn/vim-plug/master/plug.vim'
 endif
@@ -13,7 +14,7 @@ call plug#begin('~/.vim/bundle')
 call plug#end()
 
 "Настроить плагины
-colorscheme sublimemonokai	"Задать цветовую схему sublimemonokai
+"colorscheme sublimemonokai	"Задать цветовую схему sublimemonokai
 
 "Настройка русского языка
 set keymap=russian-jcukenmac	"Включить русскую раскладку, переключение по сочетанию клавишь Ctrl+^
